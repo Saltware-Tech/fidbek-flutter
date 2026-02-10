@@ -2,6 +2,8 @@
 
 Flutter wrapper plugin for Fidbek mobile SDK.
 
+pub.dev: https://pub.dev/packages/fidbek_flutter
+
 This package uses prebuilt native binaries:
 - Android: `android/libs/fidbek-android.aar`
 - iOS: `ios/FidbekSDK.xcframework`
@@ -64,6 +66,13 @@ Optional cleanup:
 ```dart
 await FidbekFlutter.shutdown();
 ```
+
+## Example App
+
+Sample app lives at:
+- `/Users/talha/Desktop/Fidbek/fidbek-flutter-example`
+
+It is configured to consume `fidbek_flutter: ^0.1.0` from pub.dev.
 
 ## API
 
