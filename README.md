@@ -1,5 +1,7 @@
 # fidbek_flutter
 
+[![pub package](https://img.shields.io/pub/v/fidbek_flutter.svg)](https://pub.dev/packages/fidbek_flutter)
+
 Flutter wrapper plugin for Fidbek mobile SDK.
 
 pub.dev: https://pub.dev/packages/fidbek_flutter
