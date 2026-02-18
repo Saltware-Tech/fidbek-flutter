@@ -1,6 +1,6 @@
-## 1.0.5
+## 0.1.5
 
-- Updated bundled native binaries to Fidbek SDK `1.0.5` (Android AAR + iOS XCFramework).
+- Updated bundled native binaries to Fidbek SDK `0.1.5` (Android AAR + iOS XCFramework).
 - Includes latest native feedback UI and media flow updates.
 
 ## 0.1.3

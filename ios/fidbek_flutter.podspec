@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'fidbek_flutter'
-  s.version          = '1.0.5'
+  s.version          = '0.1.5'
   s.summary          = 'Flutter wrapper for Fidbek binary SDKs.'
   s.description      = <<-DESC
 Flutter method-channel bridge for the Fidbek mobile SDK.
