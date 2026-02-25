@@ -1,6 +1,6 @@
 name: fidbek_flutter
 description: Flutter plugin wrapper for Fidbek iOS/Android binary SDKs.
-version: 0.1.5
+version: 0.2.0
 homepage: https://fidbek.dev
 repository: https://github.com/Saltware-Tech/fidbek-flutter
 issue_tracker: https://github.com/Saltware-Tech/fidbek-flutter/issues
