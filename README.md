@@ -18,7 +18,7 @@ Flutter wrapper plugin for Fidbek mobile SDK.
 
 ```yaml
 dependencies:
-  fidbek_flutter: ^0.2.0
+  fidbek_flutter: ^0.2.1
 ```
 
 Then:
@@ -58,6 +58,6 @@ This package includes prebuilt native binaries:
 
 - Android: `android/libs/fidbek-android.aar`
 - iOS: `ios/FidbekSDK.xcframework`
-- iOS resources: `ios/FidbekSDKResources.bundle` (`en`, `tr`)
+- iOS resources: `ios/FidbekSDK_FidbekSDK.bundle` (`en`, `tr`)
 
 Native SDK source code is intentionally not included.
