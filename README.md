@@ -58,6 +58,6 @@ This package includes prebuilt native binaries:
 
 - Android: `android/libs/fidbek-android.aar`
 - iOS: `ios/FidbekSDK.xcframework`
-- iOS resources: `ios/FidbekSDK_FidbekSDK.bundle` (`en`, `tr`)
+- iOS resources: `ios/FidbekSDK_FidbekSDK.bundle` (`en`, `tr`, `es`, `fr`, `de`, `pt`, `ar`, `hi`, `ja`, `zh-Hans`)
 
 Native SDK source code is intentionally not included.
