@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'fidbek_flutter'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'Flutter wrapper for Fidbek binary SDKs.'
   s.description      = <<-DESC
 Flutter method-channel bridge for the Fidbek mobile SDK.
@@ -16,6 +16,6 @@ The iOS implementation is distributed as a prebuilt XCFramework.
   s.swift_version    = '5.9'
   s.static_framework = true
   s.vendored_frameworks = 'FidbekSDK.xcframework'
-  s.frameworks       = ['AVFoundation', 'AVKit', 'CoreMotion', 'PencilKit', 'PhotosUI', 'UniformTypeIdentifiers']
+  s.frameworks       = ['AVFoundation', 'AVKit', 'PencilKit', 'PhotosUI', 'UniformTypeIdentifiers']
   s.resources        = 'FidbekSDK_FidbekSDK.bundle'
 end
