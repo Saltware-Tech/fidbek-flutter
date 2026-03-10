@@ -1,3 +1,9 @@
+## 0.3.5
+
+- Updated bundled iOS XCFramework and resources to native Fidbek SDK `0.3.5`.
+- Includes the scripted native packaging pipeline and latest iOS binary rebuild.
+- Android bundled native artifact remains on native `0.3.0`.
+
 ## 0.3.2
 
 - Rebuilt the bundled iOS XCFramework from native source `0.3.2`.

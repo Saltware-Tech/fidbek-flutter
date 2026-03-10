@@ -18,7 +18,7 @@ Flutter wrapper plugin for Fidbek mobile SDK.
 
 ```yaml
 dependencies:
-  fidbek_flutter: ^0.3.2
+  fidbek_flutter: ^0.3.5
 ```
 
 Then:

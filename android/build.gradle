@@ -1,5 +1,5 @@
 group 'com.fidbek.flutter'
-version '0.3.2'
+version '0.3.5'
 
 def fidbekMavenRepo = new File(projectDir, 'maven')
 
