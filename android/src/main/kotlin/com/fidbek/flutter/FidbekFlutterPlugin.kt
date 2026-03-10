@@ -37,6 +37,34 @@ class FidbekFlutterPlugin : FlutterPlugin, MethodCallHandler {
                 result.success(null)
             }
 
+            "identify" -> {
+                val userId = call.argument<String>("userId")
+                val name = call.argument<String>("name")
+                val email = call.argument<String>("email")
+                if (userId.isNullOrBlank()) {
+                    if (name.isNullOrBlank() && email.isNullOrBlank()) {
+                        result.error(
+                            "INVALID_ARGUMENT",
+                            "At least one of userId, name, or email is required",
+                            null
+                        )
+                        return
+                    }
+                }
+
+                Fidbek.identify(
+                    userId = userId,
+                    name = name,
+                    email = email
+                )
+                result.success(null)
+            }
+
+            "clearIdentity" -> {
+                Fidbek.clearIdentity()
+                result.success(null)
+            }
+
             "shutdown" -> {
                 Fidbek.shutdown()
                 result.success(null)

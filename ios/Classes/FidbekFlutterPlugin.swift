@@ -34,6 +34,43 @@ public class FidbekFlutterPlugin: NSObject, FlutterPlugin {
       Fidbek.shared.present()
       result(nil)
 
+    case "identify":
+      guard let args = call.arguments as? [String: Any] else {
+        result(
+          FlutterError(
+            code: "INVALID_ARGUMENT",
+            message: "identify arguments are required",
+            details: nil
+          )
+        )
+        return
+      }
+
+      let userId = (args["userId"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+      let name = (args["name"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+      let email = (args["email"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+      if (userId?.isEmpty ?? true) && (name?.isEmpty ?? true) && (email?.isEmpty ?? true) {
+        result(
+          FlutterError(
+            code: "INVALID_ARGUMENT",
+            message: "At least one of userId, name, or email is required",
+            details: nil
+          )
+        )
+        return
+      }
+
+      Fidbek.shared.identify(
+        userId: userId,
+        name: name,
+        email: email
+      )
+      result(nil)
+
+    case "clearIdentity":
+      Fidbek.shared.clearIdentity()
+      result(nil)
+
     case "shutdown":
       Fidbek.shared.stop()
       result(nil)

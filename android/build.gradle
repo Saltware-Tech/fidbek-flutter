@@ -1,5 +1,7 @@
 group 'com.fidbek.flutter'
-version '0.2.1'
+version '0.3.0'
+
+def fidbekMavenRepo = new File(projectDir, 'maven')
 
 buildscript {
     ext.kotlin_version = '1.9.24'
@@ -18,11 +20,18 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url fidbekMavenRepo }
     }
 }
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url fidbekMavenRepo }
+}
 
 android {
     namespace 'com.fidbek.flutter'
@@ -43,7 +52,7 @@ android {
 }
 
 dependencies {
-    implementation files('libs/fidbek-android.aar')
+    implementation 'com.fidbek:fidbek-android:0.3.0'
 
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'

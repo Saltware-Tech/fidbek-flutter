@@ -18,7 +18,7 @@ Flutter wrapper plugin for Fidbek mobile SDK.
 
 ```yaml
 dependencies:
-  fidbek_flutter: ^0.2.1
+  fidbek_flutter: ^0.3.0
 ```
 
 Then:
@@ -37,12 +37,17 @@ await FidbekFlutter.configure(
   shakeToOpenEnabled: true,
 );
 
+await FidbekFlutter.identify(
+  email: 'talha@example.com',
+);
+
 await FidbekFlutter.open();
 ```
 
-Optional shutdown:
+Optional cleanup:
 
 ```dart
+await FidbekFlutter.clearIdentity();
 await FidbekFlutter.shutdown();
 ```
 
@@ -50,7 +55,16 @@ await FidbekFlutter.shutdown();
 
 - `FidbekFlutter.configure({required String token, bool shakeToOpenEnabled = true})`
 - `FidbekFlutter.open()`
+- `FidbekFlutter.identify({String? userId, String? name, String? email})`
+- `FidbekFlutter.clearIdentity()`
 - `FidbekFlutter.shutdown()`
+
+At least one of `userId`, `name`, or `email` is required for `identify`.
+
+## Surface Policy
+
+- Wrapper surface is intentionally limited to the core 5 methods above.
+- Native attachment staging helpers are not exposed in Flutter.
 
 ## Binary Distribution
 
